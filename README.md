@@ -107,3 +107,20 @@ In addition, please ensure **PostgreSQL** or another SQL database management sys
 3. Run SQL queries:
 - Open the SQL query file `queries.sql` in the SQL client.
 - Execute the queries to show the data from the tables.
+
+### We got/referenced the following lines of code from Xpert Learning Assistant/GitHub
+
+- cat_ids = [f'cat{category_id}' for category_id in category_ids]
+
+- category_df = pd.DataFrame(list(zip(cat_ids, categories)), columns=['category_id', 'category'])
+
+- launched_date = [dt.fromtimestamp(i).date() for i in campaign_df['launched_date'].to_list()]
+end_date = [dt.fromtimestamp(i).date() for i in campaign_df['end_date'].to_list()]
+
+- email = [re.search(r'"email":\s*"([^"]+)"', i).group(1) for i in id_nums]
+contact_info_df_copy['email'] = email
+contact_info_df_copy.head()
+
+- name = [re.search(r'"name":\s*"([^"]+)"', i).group(1) for i in id_nums]
+contact_info_df_copy['name'] = name
+contact_info_df_copy.head()
